@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Leaf, ShoppingBag, Store, TrendingDown, Users, Utensils } from "lucide-react"
+import { Leaf, ShoppingBag, Store, Tractor, TrendingDown, Users, Utensils } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -137,7 +137,7 @@ export default function HomePage() {
               Un ecosistema donde todos ganan: comercios, consumidores y el planeta
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 border-2 border-primary/20 bg-card">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0">
@@ -188,7 +188,31 @@ export default function HomePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <Leaf className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                      <span>Contribuye activamente a reducir el desperdicio en la ciudad</span>
+                      <span>Apoya a los negocios locales y contribuye a reducir el desperdicio en la ciudad</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 border-2 border-green-500/30 bg-green-50/30 dark:border-green-500/20 dark:bg-green-950/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/50 flex items-center justify-center shrink-0">
+                  <Tractor className="w-6 h-6 text-green-700 dark:text-green-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Para campesinos</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <ShoppingBag className="w-5 h-5 text-green-600 dark:text-green-500 shrink-0 mt-0.5" />
+                      <span>Recupera ingresos de la mercancia que normalmente se pierden</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Utensils className="w-5 h-5 text-green-600 dark:text-green-500 shrink-0 mt-0.5" />
+                      <span>Ofrece directamente tus productos a los negociantes de una manera ágil y sencilla</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Leaf className="w-5 h-5 text-green-600 dark:text-green-500 shrink-0 mt-0.5" />
+                      <span>Sin más intermediarios, recibe tu pago directamente y sin preocupaciones</span>
                     </li>
                   </ul>
                 </div>
