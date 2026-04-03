@@ -10,23 +10,6 @@ export const metadata: Metadata = {
   title: 'La Ñapa - Lo bueno que sobra, a precio de ñapa',
   description: 'Conectamos restaurantes, panaderias y comercios de Cucuta con personas que quieren aprovechar excedentes de comida a precios increibles. Reduce el desperdicio alimentario.',
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export default function RootLayout({
